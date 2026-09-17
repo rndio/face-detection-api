@@ -1,0 +1,8 @@
+services:
+  detect-face:
+    build:
+      context: .
+    image: ghcr.io/rndio/detect-face:latest
+    ports:
+      - "5000:5000"
+    restart: unless-stopped
