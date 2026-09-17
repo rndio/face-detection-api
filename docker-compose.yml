@@ -1,8 +1,8 @@
 services:
-  detect-face:
+  face-detection-api:
     build:
       context: .
-    image: ghcr.io/rndio/detect-face:latest
+    image: ghcr.io/rndio/face-detection-api:latest
     ports:
       - "5000:5000"
     restart: unless-stopped
